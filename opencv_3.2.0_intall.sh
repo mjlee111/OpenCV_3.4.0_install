@@ -85,6 +85,8 @@ echo ""
 echo ""
 
 echo "[RO:BIT] Installation Complete"
+echo "[RO:BIT] Curent version of OpenCV is : " 
+pkg-config --modversion opencv
 echo "[RO:BIT] Reboot might be needed"
 
 
