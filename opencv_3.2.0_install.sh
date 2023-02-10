@@ -40,7 +40,11 @@ echo ""
 echo ""
 
 echo -e "\033[40;31m[RO:BIT] making OpenCV folder\033[0m"
+mkdir opencv
 cd opencv/
+wget -O opencv.zip https://github.com/opencv/opencv/archive/3.2.0.zip && wget -O opencv_contrib.zip https://github.com/opencv/opencv_contrib/archive/3.2.0.zip
+unzip opencv.zip && unzip opencv_contrib.zip
+cd opencv-3.2.0
 mkdir build
 cd build
 echo ""
