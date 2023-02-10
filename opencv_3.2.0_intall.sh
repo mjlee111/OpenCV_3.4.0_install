@@ -89,4 +89,7 @@ echo "[RO:BIT] Curent version of OpenCV is : "
 pkg-config --modversion opencv
 echo "[RO:BIT] Reboot might be needed"
 
+cd
+rm -rf opencv_3.2.0_install
+
 
