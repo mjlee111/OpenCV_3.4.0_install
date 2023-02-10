@@ -79,8 +79,8 @@ echo ""
 echo ""
 echo ""
 
-echo -e "\033[40;31m[RO:BIT] making with 4 cores Jetson Nano core\033[0m"
-make -j4
+echo -e "\033[40;31m[RO:BIT] make\033[0m"
+time make -j $(nproc)
 sudo make install
 sudo sh -c 'echo '/usr/local/lib' > /etc/ld.so.conf.d/opencv.conf'
 sudo ldconfig
