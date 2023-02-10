@@ -35,6 +35,19 @@ sudo apt-get install -y libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev
 sudo apt-get install -y libgtk-3-dev
 sudo apt-get install -y mesa-utils libgl1-mesa-dri libgtkgl2.0-dev libgtkglext1-dev
 sudo apt-get install -y libatlas-base-dev gfortran libeigen3-dev
+sudo apt-get install -y -y build-essential cmake
+sudo apt-get install -y pkg-config
+sudo apt-get install -y libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev
+sudo apt-get install -y libavcodec-dev libavformat-dev libswscale-dev libxvidcore-dev libx264-dev libxine2-dev
+sudo apt-get install -y libv4l-dev v4l-utils
+sudo apt-get install -y libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev 
+sudo apt-get install -y libqt4-dev 
+sudo apt-get install -y mesa-utils libgl1-mesa-dri libqt4-opengl-dev 
+sudo apt-get install -y mesa-utils libgtkgl2.0-dev libgtkglext1-dev
+sudo apt-get install -y libatlas-base-dev gfortran libeigen3-dev
+sudo apt-get install -y libgtk-3-dev
+sudo apt-get install -y python2.7-dev python3-dev python-numpy python3-numpy
+sudo apt-get install -y qt5-default
 echo ""
 echo ""
 echo ""
