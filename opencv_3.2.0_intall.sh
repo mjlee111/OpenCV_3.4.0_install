@@ -1,24 +1,24 @@
-echo "[RO:BIT] installing OpenCV 3.2.0"
-echo "[RO:BIT] robit 17th myeungjin lee"
+echo -e "\033[40;31m[RO:BIT] installing OpenCV 3.2.0\033[0m"
+echo -e "\033[40;31m[RO:BIT] robit 17th myeungjin lee\033[0m"
 echo ""
 echo ""
 echo ""
 
-echo "[RO:BIT] DELETING other OpenCV"
+echo -e "\033[40;31m[RO:BIT] DELETING other OpenCV\033[0m"
 sudo apt-get purge -y libopencv* python-opencv
 sudo apt autoremove -y
 echo ""
 echo ""
 echo ""
 
-echo "[RO:BIT] updating packages"
+echo -e "\033[40;31m[RO:BIT] updating packages\033[0m"
 sudo apt update -y
 sudo apt upgrade -y
 echo ""
 echo ""
 echo ""
 
-echo "[RO:BIT] installing packages"
+echo -e "\033[40;31m[RO:BIT] installing packages\033[0m"
 sudo apt-get install -y build-essential cmake unzip pkg-config
 sudo apt-get install -y libjpeg-dev libpng-dev libtiff-dev
 sudo apt-get install -y build-essential cmake pkg-config git
@@ -39,7 +39,7 @@ echo ""
 echo ""
 echo ""
 
-echo "[RO:BIT] making OpenCV folder"
+echo -e "\033[40;31m[RO:BIT] making OpenCV folder\033[0m"
 cd opencv/
 mkdir build
 cd build
@@ -47,7 +47,7 @@ echo ""
 echo ""
 echo ""
 
-echo "[RO:BIT] CMAKE!"
+echo -e "\033[40;31m[RO:BIT] CMAKE!\033[0m"
 cmake -D CMAKE_BUILD_TYPE=RELEASE \
 -D CMAKE_INSTALL_PREFIX=/usr/local \
 -D WITH_TBB=OFF \
@@ -75,7 +75,7 @@ echo ""
 echo ""
 echo ""
 
-echo "[RO:BIT] making with 4 cores Jetson Nano core"
+echo -e "\033[40;31m[RO:BIT] making with 4 cores Jetson Nano core\033[0m"
 make -j4
 sudo make install
 sudo sh -c 'echo '/usr/local/lib' > /etc/ld.so.conf.d/opencv.conf'
@@ -84,10 +84,10 @@ echo ""
 echo ""
 echo ""
 
-echo "[RO:BIT] Installation Complete"
-echo "[RO:BIT] Curent version of OpenCV is : " 
+echo -e "\033[40;31m[RO:BIT] Installation Complete\033[0m"
+echo -e "\033[40;31m[RO:BIT] Curent version of OpenCV is : \033[0m" 
 pkg-config --modversion opencv
-echo "[RO:BIT] Reboot might be needed"
+echo -e "\033[40;31m[RO:BIT] Reboot might be needed\033[0m"
 
 cd
 rm -rf opencv_3.2.0_install
