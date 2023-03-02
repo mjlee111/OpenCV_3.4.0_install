@@ -1,4 +1,4 @@
-echo -e "\033[40;31m[RO:BIT] installing OpenCV 3.2.0\033[0m"
+echo -e "\033[40;31m[RO:BIT] installing OpenCV 3.4.0\033[0m"
 echo -e "\033[40;31m[RO:BIT] robit 17th myeungjin lee\033[0m"
 echo ""
 echo ""
@@ -55,11 +55,11 @@ echo ""
 echo -e "\033[40;31m[RO:BIT] making OpenCV folder\033[0m"
 mkdir opencv
 cd opencv/
-wget -O opencv.zip https://github.com/opencv/opencv/archive/3.2.0.zip
-wget -O opencv_contrib.zip https://github.com/opencv/opencv_contrib/archive/3.2.0.zip
+wget -O opencv.zip https://github.com/opencv/opencv/archive/3.4.0.zip
+wget -O opencv_contrib.zip https://github.com/opencv/opencv_contrib/archive/3.4.0.zip
 
 unzip opencv.zip && unzip opencv_contrib.zip
-cd opencv-3.2.0
+cd opencv-3.4.0
 mkdir build
 cd build
 echo ""
@@ -90,6 +90,6 @@ pkg-config --modversion opencv
 echo -e "\033[40;31m[RO:BIT] Reboot might be needed\033[0m"
 
 cd
-rm -rf opencv_3.2.0_install
+rm -rf opencv_3.4.0_install
 
 
