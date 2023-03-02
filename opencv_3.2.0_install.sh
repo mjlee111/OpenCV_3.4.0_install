@@ -30,7 +30,7 @@ sudo apt-get install -y libgtk2.0-dev
 sudo apt-get install -y mesa-utils libgl1-mesa-dri libgtkgl2.0-dev libgtkglext1-dev
 sudo apt-get install -y libatlas-base-dev gfortran libeigen3-dev
 sudo apt-get install -y python2.7-dev python3-dev python-numpy python3-numpy
-sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev v4l-utils libxvidcore-dev libx264-dev libxine2-dev
+sudo apt-get install -y libavcodec-dev libavformat-dev libswscale-dev libv4l-dev v4l-utils libxvidcore-dev libx264-dev libxine2-dev
 sudo apt-get install -y libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev
 sudo apt-get install -y libgtk-3-dev
 sudo apt-get install -y mesa-utils libgl1-mesa-dri libgtkgl2.0-dev libgtkglext1-dev
