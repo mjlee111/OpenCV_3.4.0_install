@@ -90,6 +90,7 @@ pkg-config --modversion opencv
 echo -e "\033[40;31m[RO:BIT] Reboot might be needed\033[0m"
 
 cd
-rm -rf opencv_3.4.0_install
+rm -rf OpenCV_3.4.0_install
+rm opencv_3.4.0_install.sh
 
 
